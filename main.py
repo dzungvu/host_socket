@@ -21,7 +21,7 @@ html = """
         <ul id='messages'>
         </ul>
         <script>
-            var client_id = 'chatroom'
+            var client_id = 112233
             document.querySelector("#ws-id").textContent = client_id;
             var ws = new WebSocket(`wss://host-socket.herokuapp.com/ws/${client_id}`);
             ws.onmessage = function(event) {
